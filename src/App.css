@@ -46,7 +46,7 @@ p, a, li, button, ul {
   margin: 0;
   padding: 0;
   line-height: normal;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:hover {
@@ -81,6 +81,18 @@ p.success {
 p.danger {
 	color: red;
 }
+
+.logo-container {
+  display: inline-block; /* Ensures the container wraps around the logo */
+  transition: transform 0.2s ease-in-out; /* Smooth transition for transform property */
+}
+
+/* Hover effect */
+.logo-container:hover {
+  transform: scale(1.1); /* Scale up the logo on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
 
 /************ Navbar Css ************/
 nav.navbar {
